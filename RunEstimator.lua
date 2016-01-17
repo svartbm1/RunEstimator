@@ -38,4 +38,5 @@ for i in string.gmatch(line, "[^%s]+") do
    print("'"..i.."'")
 end
 
-print(list[1].."and"..list[2])
+print(list[1].." and "..list[2])
+ print(string.format("%2.2f", list[1])/11)
