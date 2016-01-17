@@ -31,7 +31,11 @@ print( "7The return is: "  .. counter(30, 90) )
  
  
 local line = "33 90"
-
+local list = {}
 for i in string.gmatch(line, "[^%s]+") do  
-   print(i)
+   --if 0 < i and i < 100 then 
+   table.insert(list, i)
+   print("'"..i.."'")
 end
+
+print(list[1].."and"..list[2])
