@@ -16,47 +16,23 @@ end
 
 
  
-print( "2The return is: " .. counter(50.00, 73) )
-	kills = 0
-    soFar = 0
-print( "1The return is: "  .. counter(100, 45) )
-	kills = 0
-    soFar = 0
-print( "7The return is: "  .. counter(10, 50) )
-	kills = 0
-    soFar = 0
-print( "7The return is: "  .. counter(30, 90) )
- 
- 
-
---for i in string.gmatch(line, "[^%s]+") do  
-   --if 0 < i and i < 100 then 
-  -- table.insert(list, i)
-  -- print("'"..i.."'")
---end
-
---print(list[1].." and "..list[2])
- ---print(string.format("%2.2f", list[1])/11)
- 
  local Estimator = function(input)
-	local line = "33 90"
-	local list = {}
-	for i in string.gmatch(input, "[^%s]+") do  
-		table.insert(list, i)
-		print(i.." added")
-	end
-	print("'"..string.format("%2.2f", list[1]).."'")
-	print("'"..string.format("%2.2f", list[2]).."'")
-	local input1 = tonumber(string.format("%2.2f", list[1]))
-	local input2 = tonumber(string.format("%2.2f", list[2]))
-	kills = 0
-    soFar = 0
-	print( "7The return is: "  .. counter(30.00, 90.00))
-	kills = 0
-    soFar = 0
-	print("RESULT: " .. counter(input1, input2))
+    if input == "" then 
+		print("Type '/runs <drop chance> <desired probability>' to make calculation") 
+	else	
+		local list = {}
+		for i in string.gmatch(input, "[^%s]+") do  
+			table.insert(list, i)			
+		end
+		
+		local input1 = tonumber(string.format("%2.2f", list[1]))
+		local input2 = tonumber(string.format("%2.2f", list[2]))
 	
- 
+		kills = 0
+		soFar = 0
+		print("RESULT: You need to make " .. counter(input1, input2) .. " runs to get an item with the dropchance ")
+	
+	end
  end
  
  SLASH_RUNESTIMATOR1 = "/runs"
