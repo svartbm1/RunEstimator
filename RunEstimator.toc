@@ -1,7 +1,5 @@
-## Interface: 60200
+## Interface: 70200
 ## Title: Run Estimator
 ## Version: 0.8beta
-## Notes: This is my test addon 
-## Author: Minna
+## Author: Oexi#1303
 RunEstimator.lua
-RunEstimator.xml
