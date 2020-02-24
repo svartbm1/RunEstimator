@@ -8,7 +8,7 @@ counter = function(dropRate, desired)
 	kills = kills + 1
 	soFar = soFar + (100-soFar) * (dropRate/100) --adds the chance to get the item this "run" to soFar
 	if soFar < desired then
-		return counter(dropRate, desired)		
+		return counter(dropRate, desired) -- recursively continues until desired dropchance is reached		
 	else 	    
 		return kills
 	end
