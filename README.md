@@ -13,3 +13,4 @@ https://www.twitch.tv/downloads
 To use the addon type '/runs "dropchance" "desired probability"' without the ' ' (Example: /runs 32.15 90) 
 This will output the line: 'RESULT: You need to make 6 runs to get an item with the dropchance 32.15% with 90% probability.'
 		
+Updated to be compatible with 8.3.0.
