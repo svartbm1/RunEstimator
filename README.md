@@ -5,7 +5,7 @@ It calculates the number of runs or kills a player has to make in order to
 reach a specified probability to get an item with a specific chance to drop.
 
 For installation, the folder containing the addOn should the placed in a directory such as 
-C:\Program Files\World of Warcraft\_retail_ 
+C:\Program Files\World of Warcraft\retail
 or equivalent, and the addOn enabled in the checklist in the addOns tab in game.
 Optionally, you can install it using the Twitch app (Cruse client) from the Twitch website.
 https://www.twitch.tv/downloads
